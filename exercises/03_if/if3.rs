@@ -3,11 +3,11 @@ fn animal_habitat(animal: &str) -> &str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        0
     };
 
     // Don't change the expression below!
@@ -23,7 +23,10 @@ fn animal_habitat(animal: &str) -> &str {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    println!("A gopher lives in a {}", animal_habitat("gopher"));
+    println!("A snake lives in a {}", animal_habitat("snake"));
+    println!("A crab lives on the {}", animal_habitat("crab"));
+    println!("A dinosaur lives in {}", animal_habitat("dinosaur"));
 }
 
 // Don't change the tests!
